@@ -3,7 +3,7 @@
 #set( $symbol_escape = '\' )
 package ${package}.service.common.exception;
 
-import ${package}.base.components.util.result.code.ICodeHandle;
+import com.rubber.base.components.util.result.code.ICodeHandle;
 
 /**
  * @author luffyu

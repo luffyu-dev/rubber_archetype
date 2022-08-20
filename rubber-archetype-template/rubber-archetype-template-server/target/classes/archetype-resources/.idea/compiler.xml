@@ -10,9 +10,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="${artifactId}-service" />
-        <module name="${artifactId}-api" />
         <module name="${artifactId}-manager" />
+        <module name="${artifactId}-api" />
+        <module name="${artifactId}-service" />
         <module name="${artifactId}-dao" />
         <module name="${artifactId}-web" />
       </profile>

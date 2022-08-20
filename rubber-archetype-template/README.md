@@ -34,6 +34,6 @@ mvn archetype:generate
 
 
 ```
-mvn archetype:generate  -DarchetypeCatalog=internal -DarchetypeArtifactId=rubber-archetype-template-web -DarchetypeGroupId=com.rubber -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=com.rubber -Dversion=1.0.0-SNAPSHOT -Dpackage=com.rubber.at.tennis -DartifactId=rubber-at-tennis-atp
+mvn archetype:generate  -DarchetypeCatalog=internal -DarchetypeArtifactId=rubber-archetype-template-server -DarchetypeGroupId=com.archetype -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=com.rubber -Dversion=1.0.0-SNAPSHOT -Dpackage=com.rubber.at.tennis -DartifactId=rubber-at-tennis-atp
 ```
 

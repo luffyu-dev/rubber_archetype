@@ -9,9 +9,8 @@
         <version>1.2.0-ALPHA</version>
     </parent>
 
-    <artifactId>${artifactId}</artifactId>
-
     <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}</artifactId>
     <packaging>pom</packaging>
     <version>${version}</version>
 
@@ -19,6 +18,15 @@
     <properties>
         <rubber-server-archetype.version>1.0-SNAPSHOT</rubber-server-archetype.version>
     </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.rubber</groupId>
+            <artifactId>base_utils</artifactId>
+        </dependency>
+    </dependencies>
+
 
 
     <dependencyManagement>
@@ -67,14 +75,7 @@
                     <propertyFile>archetype.properties</propertyFile>
                 </configuration>
             </plugin>
-            <!--            <plugin>-->
-            <!--                <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                <artifactId>maven-resources-plugin</artifactId>-->
-            <!--                <version>3.2.0</version>-->
-            <!--                <configuration>-->
-            <!--                    <addDefaultExcludes>false</addDefaultExcludes>-->
-            <!--                </configuration>-->
-            <!--            </plugin>-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

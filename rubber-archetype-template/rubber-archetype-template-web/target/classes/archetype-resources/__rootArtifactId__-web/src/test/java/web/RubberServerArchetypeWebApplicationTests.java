@@ -9,8 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootTest
-@ComponentScan("${package}.*")
-@MapperScan("${package}.**.dao.mapper")
+@ComponentScan("com.rubber.*")
+@MapperScan("com.rubber.**.dao.mapper")
 class RubberServerArchetypeWebApplicationTests {
 
 

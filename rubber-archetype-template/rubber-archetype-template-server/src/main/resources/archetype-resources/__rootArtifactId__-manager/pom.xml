@@ -10,10 +10,4 @@
     <artifactId>${artifactId}</artifactId>
 
 
-    <dependencies>
-        <dependency>
-            <groupId>com.rubber</groupId>
-            <artifactId>base_utils</artifactId>
-        </dependency>
-    </dependencies>
 </project>

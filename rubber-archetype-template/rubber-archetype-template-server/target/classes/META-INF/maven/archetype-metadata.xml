@@ -18,6 +18,7 @@
     <fileSet encoding="UTF-8">
       <directory></directory>
       <includes>
+        <include>rubber-server-archetype.iml</include>
         <include>.gitignore</include>
       </includes>
     </fileSet>
@@ -31,16 +32,58 @@
             <include>**/*.java</include>
           </includes>
         </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>rubber-server-archetype-dao.iml</include>
+          </includes>
+        </fileSet>
       </fileSets>
     </module>
-    <module id="${rootArtifactId}-service" dir="__rootArtifactId__-service" name="${rootArtifactId}-service" />
-    <module id="${rootArtifactId}-api" dir="__rootArtifactId__-api" name="${rootArtifactId}-api" />
+    <module id="${rootArtifactId}-service" dir="__rootArtifactId__-service" name="${rootArtifactId}-service">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>rubber-server-archetype-service.iml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-api" dir="__rootArtifactId__-api" name="${rootArtifactId}-api">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>rubber-server-archetype-api.iml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
     <module id="${rootArtifactId}-manager" dir="__rootArtifactId__-manager" name="${rootArtifactId}-manager">
       <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
           <directory>src/main/java</directory>
           <includes>
             <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>rubber-server-archetype-manager.iml</include>
           </includes>
         </fileSet>
       </fileSets>
@@ -81,6 +124,7 @@
           <directory></directory>
           <includes>
             <include>mvnw.cmd</include>
+            <include>rubber-server-archetype-web.iml</include>
             <include>HELP.md</include>
             <include>.gitignore</include>
             <include>mvnw</include>

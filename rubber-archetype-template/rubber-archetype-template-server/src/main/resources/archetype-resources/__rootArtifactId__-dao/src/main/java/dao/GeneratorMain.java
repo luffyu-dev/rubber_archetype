@@ -2,7 +2,7 @@
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
 package ${package}.dao;
-import ${package}.base.components.mysql.utils.MybatisBaseCodeGenerator;
+import com.rubber.base.components.mysql.utils.MybatisBaseCodeGenerator;
 
 /**
  * @author luffyu

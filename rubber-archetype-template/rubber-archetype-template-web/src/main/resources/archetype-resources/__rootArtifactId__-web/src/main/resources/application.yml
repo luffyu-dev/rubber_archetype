@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: wx_at_atp_api_web
+    name: rubber-server-archetype
   profiles:
     active: dev
 

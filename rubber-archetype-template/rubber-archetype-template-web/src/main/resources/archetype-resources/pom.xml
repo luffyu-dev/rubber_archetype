@@ -9,9 +9,8 @@
         <version>1.2.0-ALPHA</version>
     </parent>
 
-    <artifactId>${artifactId}</artifactId>
-
     <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}</artifactId>
     <packaging>pom</packaging>
     <version>${version}</version>
 
@@ -21,31 +20,17 @@
     </properties>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>com.rubber</groupId>
+            <artifactId>base_utils</artifactId>
+        </dependency>
+    </dependencies>
+
+
+
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>${groupId}</groupId>
-                <artifactId>${rootArtifactId}-dao</artifactId>
-                <version>${version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>${groupId}</groupId>
-                <artifactId>${rootArtifactId}-service</artifactId>
-                <version>${version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>${groupId}</groupId>
-                <artifactId>${rootArtifactId}-api</artifactId>
-                <version>${version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>${groupId}</groupId>
-                <artifactId>${rootArtifactId}-manager</artifactId>
-                <version>${version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>${groupId}</groupId>
@@ -67,14 +52,7 @@
                     <propertyFile>archetype.properties</propertyFile>
                 </configuration>
             </plugin>
-            <!--            <plugin>-->
-            <!--                <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                <artifactId>maven-resources-plugin</artifactId>-->
-            <!--                <version>3.2.0</version>-->
-            <!--                <configuration>-->
-            <!--                    <addDefaultExcludes>false</addDefaultExcludes>-->
-            <!--                </configuration>-->
-            <!--            </plugin>-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
