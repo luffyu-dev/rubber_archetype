@@ -1,4 +1,4 @@
-package com.rubber.web;
+package com.archetype.web;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -8,10 +8,10 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan("com.rubber.*")
 @MapperScan("com.rubber.**.dao.mapper")
 @SpringBootApplication
-public class RubberServerArchetypeWebApplication {
+public class RubberServerWebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RubberServerArchetypeWebApplication.class, args);
+        SpringApplication.run(RubberServerWebApplication.class, args);
     }
 
 }

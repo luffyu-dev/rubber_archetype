@@ -1,4 +1,4 @@
-package com.rubber.service.common.constant;
+package com.archetype.service.common.constant;
 
 /**
  * @author luffyu

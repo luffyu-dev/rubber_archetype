@@ -1,4 +1,4 @@
-package com.rubber.web;
+package com.archetype.web;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.test.context.SpringBootTest;

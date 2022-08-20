@@ -1,4 +1,4 @@
-package com.rubber.service.common.exception;
+package com.archetype.service.common.exception;
 
 import com.rubber.base.components.util.result.code.ICodeHandle;
 

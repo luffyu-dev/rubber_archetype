@@ -1,4 +1,4 @@
-package com.rubber.dao;
+package com.archetype.dao;
 import com.rubber.base.components.mysql.utils.MybatisBaseCodeGenerator;
 
 /**

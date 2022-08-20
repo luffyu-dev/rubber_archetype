@@ -1,4 +1,4 @@
-package com.rubber.manager.dto;
+package com.archetype.manager.dto;
 
 import lombok.Data;
 

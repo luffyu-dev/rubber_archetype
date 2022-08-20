@@ -1,6 +1,6 @@
-package com.rubber.service.demo;
+package com.archetype.service.demo;
 
-import com.rubber.api.DemoApi;
+import com.archetype.api.DemoApi;
 import org.springframework.stereotype.Service;
 
 /**

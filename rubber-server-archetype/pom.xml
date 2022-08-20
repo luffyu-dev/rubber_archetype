@@ -11,9 +11,11 @@
         <version>1.2.0-ALPHA</version>
     </parent>
 
+    <groupId>com.archetype</groupId>
     <artifactId>rubber-server-archetype</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>rubber-server-archetype-dao</module>
         <module>rubber-server-archetype-service</module>
@@ -28,34 +30,43 @@
     </properties>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>com.rubber</groupId>
+            <artifactId>base_utils</artifactId>
+        </dependency>
+    </dependencies>
+
+
+
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.rubber</groupId>
+                <groupId>com.archetype</groupId>
                 <artifactId>rubber-server-archetype-dao</artifactId>
                 <version>${rubber-server-archetype.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.rubber</groupId>
+                <groupId>com.archetype</groupId>
                 <artifactId>rubber-server-archetype-service</artifactId>
                 <version>${rubber-server-archetype.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.rubber</groupId>
+                <groupId>com.archetype</groupId>
                 <artifactId>rubber-server-archetype-api</artifactId>
                 <version>${rubber-server-archetype.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.rubber</groupId>
+                <groupId>com.archetype</groupId>
                 <artifactId>rubber-server-archetype-manager</artifactId>
                 <version>${rubber-server-archetype.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.rubber</groupId>
+                <groupId>com.archetype</groupId>
                 <artifactId>rubber-server-archetype-web</artifactId>
                 <version>${rubber-server-archetype.version}</version>
             </dependency>
@@ -74,14 +85,7 @@
                     <propertyFile>archetype.properties</propertyFile>
                 </configuration>
             </plugin>
-            <!--            <plugin>-->
-            <!--                <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                <artifactId>maven-resources-plugin</artifactId>-->
-            <!--                <version>3.2.0</version>-->
-            <!--                <configuration>-->
-            <!--                    <addDefaultExcludes>false</addDefaultExcludes>-->
-            <!--                </configuration>-->
-            <!--            </plugin>-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

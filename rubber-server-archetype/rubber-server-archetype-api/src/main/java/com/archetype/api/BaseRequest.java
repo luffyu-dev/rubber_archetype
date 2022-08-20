@@ -1,4 +1,4 @@
-package com.rubber.api;
+package com.archetype.api;
 
 /**
  * @author luffyu
