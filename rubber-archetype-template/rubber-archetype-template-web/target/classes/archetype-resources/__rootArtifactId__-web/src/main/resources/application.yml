@@ -1,11 +1,14 @@
 server:
-  port: 38010
+  port: 38080
   servlet:
-    context-path: /at-admin
+    context-path: /at-api
 
 spring:
   application:
-    name: rubber-server-archetype
+    name: ${artifactId}
   profiles:
-    active: dev
-
+    active: master
+  jackson:
+    date-format:  "yyyy-MM-dd HH:mm"
+    time-zone: "GMT+08:00"
+    default-property-inclusion: non_empty

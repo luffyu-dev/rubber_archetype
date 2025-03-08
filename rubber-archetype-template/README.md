@@ -1,10 +1,20 @@
 
 #### 一、使用方法
 
+- 下载基础包到本地
+ 
+ `git clone https://github.com/luffyu-dev/rubber_base_components.git
+  `
+- 执行
+进入rubber_base_components 工程后执行
+ `mvn install
+ `
+
 - 下载当前骨架到本地
-`git clone 
+`git clone git@github.com:luffyu-dev/rubber_archetype.git
 `
 - 构建骨架到本地
+  进入到 rubber-archetype-template 工程后执行
 `mvn install
 `
 - 在你要创建工程的文件目录下 执行一下命令，将会在此目录下得到一个新的工程
@@ -24,9 +34,9 @@ mvn archetype:generate
     + "-DgroupId" 表示你当前需要生成的项目的 groupId
     + "-DartifactId" 表示你当前需要生成的项目的 artifactId
     + "-Dversion" 表示你当前需要生成的项目的 version
-    + "-Dpackage" 表示你当前需要生成的项目的 包跟路径，线下买鸭一般是 com.fenqile.afterpay.offline.**
+    + "-Dpackage" 表示你当前需要生成的项目的 包跟路径，一般是 com.rubber.at.tennis
     + "-DarchetypeArtifactId" 表示选择的骨架模版，当前可选择的
-    + "-DarchetypeGroupId" 表示选择的骨架模版的GroupId,  当前项目骨架id都是 "com.fenqile"
+    + "-DarchetypeGroupId" 表示选择的骨架模版的GroupId,  当前项目骨架id都是 "com.rubber"
     + "-DarchetypeVersion" 表示选择骨架模版的Version,  当前项目骨架Version都是 "1.0.0-SNAPSHOT"
 
 #### 二、可能遇到的问题
